@@ -1,7 +1,7 @@
 from canvas import Canvas, DrawError
 
 
-def start_drawing(input_path='./input.txt', output_path='./output.txt'):
+def drawing(input_path='./input.txt', output_path='./output.txt'):
     with open(input_path, 'r') as input_file, open(output_path, 'w') as output_file:
         canvas = None
         for command in input_file.read().split('\n'):
@@ -31,4 +31,4 @@ def execute_command(command, canvas):
 
 
 if __name__ == '__main__':
-    start_drawing()
+    drawing()
